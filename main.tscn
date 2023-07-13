@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://lmm7txlg687t"]
+
+[ext_resource type="Texture2D" uid="uid://blbxbdomsoyc" path="res://space_background.png" id="1_igcax"]
+[ext_resource type="PackedScene" uid="uid://bp2iqmu7xyhif" path="res://ship.tscn" id="2_6rmb8"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_igcax")
+centered = false
+
+[node name="Ship" parent="." instance=ExtResource("2_6rmb8")]

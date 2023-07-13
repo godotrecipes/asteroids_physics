@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp2iqmu7xyhif"]
+
+[ext_resource type="Script" path="res://ship.gd" id="1_50qyx"]
+[ext_resource type="Texture2D" uid="uid://bahq213m7dj6v" path="res://spaceShooter2_spritesheet.png" id="1_o3m1g"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jqhld"]
+radius = 51.1566
+
+[node name="Ship" type="RigidBody2D"]
+position = Vector2(990, 540)
+can_sleep = false
+linear_damp = 1.0
+angular_damp = 2.0
+script = ExtResource("1_50qyx")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -1.5708
+texture = ExtResource("1_o3m1g")
+region_enabled = true
+region_rect = Rect2(448, 59, 114, 80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jqhld")
