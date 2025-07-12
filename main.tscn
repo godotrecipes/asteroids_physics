@@ -10,3 +10,4 @@ texture = ExtResource("1_igcax")
 centered = false
 
 [node name="Ship" parent="." instance=ExtResource("2_6rmb8")]
+position = Vector2(998, 536)
